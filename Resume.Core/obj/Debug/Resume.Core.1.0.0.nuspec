@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Resume.Core</id>
+    <version>1.0.0</version>
+    <authors>Resume.Core</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Core Data handling</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.EntityFrameworkCore" version="5.0.3" exclude="Build,Analyzers" />
+        <dependency id="Resume.Data" version="1.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\projects\CSharp\Resume.Core\bin\Debug\netcoreapp3.1\Resume.Core.runtimeconfig.json" target="lib\netcoreapp3.1\Resume.Core.runtimeconfig.json" />
+    <file src="D:\projects\CSharp\Resume.Core\bin\Debug\netcoreapp3.1\Resume.Core.dll" target="lib\netcoreapp3.1\Resume.Core.dll" />
+  </files>
+</package>
