@@ -575,24 +575,6 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
-      "Resume.Data/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3",
-          "Microsoft.Extensions.Configuration": "5.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
-          "Microsoft.Extensions.Configuration.Json": "5.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0",
-          "System.Configuration.ConfigurationManager": "5.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Resume.Data.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Resume.Data.dll": {}
-        }
-      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1654,6 +1636,25 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Resume.Data/1.0.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3",
+          "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
+          "Microsoft.Extensions.Configuration.Json": "5.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0",
+          "System.Configuration.ConfigurationManager": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Data.dll": {}
+        }
       }
     }
   },
@@ -2563,18 +2564,6 @@
         "newtonsoft.json.10.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
-      ]
-    },
-    "Resume.Data/1.0.2": {
-      "sha512": "K/ETni3sTjzNchgp7zbrpNF+jhLYuQ5a/fAXLy+4MVUSCI0RuP/80JHJYsKTMBzpZ9ib3bGqKHGYJnzomlbCcQ==",
-      "type": "package",
-      "path": "resume.data/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        "lib/netcoreapp3.1/Resume.Data.dll",
-        "lib/netcoreapp3.1/Resume.Data.runtimeconfig.json",
-        "resume.data.1.0.2.nupkg.sha512",
-        "resume.data.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -6131,6 +6120,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Resume.Data/1.0.2": {
+      "type": "project",
+      "path": "../Resume.Data/Resume.Data.csproj",
+      "msbuildProject": "../Resume.Data/Resume.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6141,29 +6135,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Clint\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\clint\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\CSharp\\Resume.Core\\Resume.Core.csproj",
+      "projectUniqueName": "C:\\ProjectsRepo\\Resume.Core\\Resume.Core.csproj",
       "projectName": "Resume.Core",
-      "projectPath": "D:\\projects\\CSharp\\Resume.Core\\Resume.Core.csproj",
-      "packagesPath": "C:\\Users\\Clint\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\CSharp\\Resume.Core\\obj\\",
+      "projectPath": "C:\\ProjectsRepo\\Resume.Core\\Resume.Core.csproj",
+      "packagesPath": "C:\\Users\\clint\\.nuget\\packages\\",
+      "outputPath": "C:\\ProjectsRepo\\Resume.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "D:\\projects\\CSharp\\Resume.ApiV2\\NuGet.Config",
-        "C:\\Users\\Clint\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\ProjectsRepo\\Resume.ApiV2\\NuGet.Config",
+        "C:\\Users\\clint\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6174,7 +6160,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\ProjectsRepo\\Resume.Data\\Resume.Data.csproj": {
+              "projectPath": "C:\\ProjectsRepo\\Resume.Data\\Resume.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6196,10 +6186,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.3, )"
-          },
-          "Resume.Data": {
-            "target": "Package",
-            "version": "[1.0.2, )"
           }
         },
         "imports": [
@@ -6217,7 +6203,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

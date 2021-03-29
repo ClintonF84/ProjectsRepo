@@ -21,3 +21,15 @@ D:\projects\CSharp\Resume.ApiV2\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.
 D:\projects\CSharp\Resume.ApiV2\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.dll
 D:\projects\CSharp\Resume.ApiV2\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.pdb
 D:\projects\CSharp\Resume.ApiV2\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.genruntimeconfig.cache
+C:\ProjectsRepo\Resume.Data\bin\Debug\netcoreapp3.1\Resume.Data.deps.json
+C:\ProjectsRepo\Resume.Data\bin\Debug\netcoreapp3.1\Resume.Data.runtimeconfig.json
+C:\ProjectsRepo\Resume.Data\bin\Debug\netcoreapp3.1\Resume.Data.runtimeconfig.dev.json
+C:\ProjectsRepo\Resume.Data\bin\Debug\netcoreapp3.1\Resume.Data.dll
+C:\ProjectsRepo\Resume.Data\bin\Debug\netcoreapp3.1\Resume.Data.pdb
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.AssemblyInfoInputs.cache
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.AssemblyInfo.cs
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.csproj.CoreCompileInputs.cache
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.dll
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.pdb
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.genruntimeconfig.cache
+C:\ProjectsRepo\Resume.Data\obj\Debug\netcoreapp3.1\Resume.Data.csprojAssemblyReference.cache
